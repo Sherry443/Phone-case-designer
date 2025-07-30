@@ -1,38 +1,73 @@
-.App {
+/* app.css */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.app-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 360px;
+    background-color: #0c1b3d;
+    color: white;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: hidden;
+}
+
+.sidebar h2 {
+  font-size: 34px;
+  margin-bottom: 6px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar label.label {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Inputs and Buttons */
+.sidebar input[type="file"],
+.sidebar button,
+.sidebar select,
+.sidebar input[type="range"] {
+  background-color: #d9d2cc;
+  color: #0c1b3d;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  width: 98%;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar button:hover {
+  background-color: #c5bdb6;
+}
+
+/* Canvas Styling */
+.canvas-wrapper {
+  flex: 1;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #ffffff;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.combo{
+  display: flex;
+  width: 98%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15;
 }
