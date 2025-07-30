@@ -207,7 +207,7 @@
 import React, { useState, useRef } from 'react';
 import CanvasStage from './components/CanvasStage';
 import Sidebar from './components/Sidebar';
-import './app.css';
+import './App.css';
 
 function App() {
   const [images, setImages] = useState([]);
