@@ -8,16 +8,15 @@ This is a React-based web application built using modern React (with hooks, func
 - Responsive UI
 - Reusable components
 - State management (using `useState`, `useEffect`, etc.)
-- Custom styling with CSS / Tailwind / Styled Components *(optional - edit accordingly)*
 
 ## 🛠️ Installation
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/Sherry443/Phone-case-designer.git
 
 # Navigate into the project directory
-cd your-repo-name
+cd phone-case-designer
 
 # Install dependencies
 npm install
